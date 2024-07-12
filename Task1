@@ -1,0 +1,71 @@
+/*Develop a simple quiz game that presents multiple-choice questions to the user. The game should keep track of the user's score and provide feedback
+based on their answers.*/
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    int answer;
+    int score=0;
+    cout<<"******************** QUIZ GAME ***************************"<<endl;
+    for(int i=1;i<=5;i++)
+    {
+        if(i==1)
+        {
+           cout<<"Question Number 1"<<endl;
+           cout<<"Which Country Won the FIFA World Cup 2022 ?"<<endl;
+           cout<<"1:ARGENTINA\n2:FRANCE\n3:INDIA\n4:AUSTRALIA"<<endl;
+           cin>>answer;
+           if(answer==1)
+           {
+             score++;
+           }  
+        }
+        if(i==2)
+        {        
+           cout<<"Question Number 2"<<endl;
+           cout<<"What is the capital of India?"<<endl;
+           cout<<"1:PATNA\n2:MUMBAI\n3:DELHI\n4:RANCHI"<<endl;
+           cin>>answer;
+           if(answer==3)
+           {
+             score++;
+           }   
+        }
+        if(i==3)
+        {        
+           cout<<"Question Number 3"<<endl;
+           cout<<"How many continents are there in the world?"<<endl;
+           cout<<"1:8\n2:4\n3:6\n4:7"<<endl;
+           cin>>answer;
+           if(answer==4)
+           {
+             score++;
+           }   
+        }
+        if(i==4)
+        {        
+           cout<<"Question Number 4"<<endl;
+           cout<<"What is the capital of Jharkhand ?"<<endl;
+           cout<<"1:DEOGHAR\n2:RANCHI\n3:JAMSHEDPUR\n4:BOKARO"<<endl;
+           cin>>answer;
+           if(answer==2)
+           {
+             score++;
+           }   
+        }
+        if(i==5)
+        {        
+           cout<<"Question Number 5"<<endl;
+           cout<<"In which year India got independence ?"<<endl;
+           cout<<"1:1948\n2:1950\n3:1947\n4:1949"<<endl;
+           cin>>answer;
+           if(answer==3)
+           {
+             score++;
+           }   
+        }
+    }
+    cout<<"CONGRATULATIONS!!!\nYOUR SCORE IS "<<score<<" OUT OF 5"; 
+}
